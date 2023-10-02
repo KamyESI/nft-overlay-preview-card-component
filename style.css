@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: rgb(27, 27, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 375px;
+  padding: 4%;
+  background-color: rgb(51, 68, 104);
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.image-container {
+  display: flex;
+  position: relative;
+  height: 40%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+img,
+.transparent-eye {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.transparent-eye {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(68, 157, 192, 0.25);
+  color: white;
+  font-size: 3rem;
+  opacity: 0;
+}
+
+h2,
+span {
+  color: white;
+}
+
+h2 {
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.main-container p {
+  color: rgb(139, 139, 163);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.container-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container .icon-container-1 {
+  color: aqua;
+}
+
+.icon-container-1,
+.icon-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  margin-right: 5px;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 35px;
+  border: solid 2px white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.avatar-container p {
+  font-size: 1.1rem;
+}
+
+/*        hover         */
+
+h2:hover {
+  color: aqua;
+  cursor: pointer;
+}
+span:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.image-container .transparent-eye:hover {
+  opacity: 1;
+  cursor: pointer;
+}
